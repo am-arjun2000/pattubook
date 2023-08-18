@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Balance: <span id="balance"></span></h1>
+    <div id="formDiv">
+        <form id="myForm">
+            <input type="number" min="0" step="0.01" id="topupInput" placeholder="Amount topup">
+            <input type="number" min="0" step="0.01" id="spentInput" placeholder="Spent amount">
+            <input type="text" id="descInput" placeholder="Description of spent">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="feedback"></div>
+    <div id="data"></div>
+    <h3>Log:</h3>
+    <div id="log"></div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
